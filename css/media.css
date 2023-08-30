@@ -1,0 +1,324 @@
+/* планшет */
+
+@media (min-width: 641px) and (max-width: 1199px) {
+  body {
+    font-size: 17px;
+    line-height: 22px;
+  }
+
+  .header {
+    padding-top: 45px;
+    background-image: url("../images/banner-bg-tablet.jpg");
+  }
+
+  .header-container {
+    width: 650px;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  .header-logo {
+    width: 158px;
+  }
+
+  .menu-mobil {
+    display: block;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .article-main {
+    flex-direction: column;
+  }
+
+  .article-image-container {
+    margin: 0;
+  }
+
+  .article-image-container:not(:first-child) {
+    margin-top: 40px;
+    width: 100%;
+  }
+
+  .article-content {
+    margin-top: 16px;
+  }
+
+  .article-title::after:not(:last-child) {
+    content: "";
+    display: block;
+    background-color: #eeeeee;
+    width: 100%;
+    height: 3px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .data_author {
+    margin-top: 40px;
+  }
+
+  .article-text-container {
+    margin-top: 35px;
+  }
+
+  .trends-title {
+    font-size: 18px;
+  }
+
+  .trends-posts {
+    margin-bottom: 50px;
+  }
+
+  .trend-post {
+    width: calc(50% - 2px);
+    min-height: 247px;
+    margin-top: 4px;
+  }
+
+  .trend-post:nth-child(-n + 2) {
+    margin-top: 0;
+  }
+
+  .trend-post:nth-child(2n + 3) {
+    margin-left: 0;
+  }
+
+  .content-tags {
+    margin-top: 12px;
+  }
+
+  .container {
+    width: 700px;
+    padding: 51px 0 0 0;
+  }
+
+  .main {
+    width: 392px;
+  }
+
+  .article-main {
+    width: 392px;
+    flex-direction: column;
+    border-bottom: 3px solid #eeeeee;
+  }
+
+  .article-main:last-child {
+    border-bottom: none;
+  }
+
+  .aside-container {
+    margin-left: 20px;
+  }
+
+  .article-title::after {
+    content: "";
+    display: block;
+    background-color: #eeeeee;
+    width: 100%;
+    height: 3px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .products {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .product {
+    width: 40%;
+  }
+
+  .product:nth-child(3) {
+    margin-top: 50px;
+    margin-left: 45px;
+  }
+
+  .footer-container {
+    width: calc(100% - 30px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* горизонтальная */
+
+@media (min-width: 641px) and (max-width: 1200px) and (orientation: landscape) {
+  .trends-posts {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .trend-post {
+    height: 100%;
+    width: calc((100% / 4) - 3px);
+  }
+
+  .trends-title {
+    font-size: 14px;
+  }
+}
+
+/* мобильная версия */
+
+@media (max-width: 640px) {
+  body {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .header {
+    box-sizing: border-box;
+    height: 640px;
+    padding-top: 30px;
+    background-image: url("../images/banner-mobile.jpg");
+  }
+
+  .header-container {
+    width: 100%;
+  }
+
+  .header-title {
+    width: 350px;
+    padding-top: 30px;
+  }
+
+  h1 {
+    padding: 0 15px;
+    margin: 0 auto;
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  .header-logo {
+    margin: 170px auto 0;
+    width: 267px;
+  }
+
+  .menu-mobil {
+    display: block;
+    margin-right: 19px;
+    margin-top: -20px;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .container {
+    flex-direction: column;
+    width: 100%;
+    padding: 25px 10px;
+  }
+
+  .main {
+    width: 350px;
+  }
+
+  .article-main {
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-bottom: solid 4px #eeeeee;
+    width: 350px;
+  }
+
+  .article-content {
+    margin-left: 0;
+  }
+
+  .article-image {
+    width: 350px;
+  }
+
+  .article-text {
+    margin-bottom: 25px;
+  }
+
+  .trends-title {
+    font-size: 16px;
+    margin-top: 40px;
+  }
+
+  .trend-posts {
+    margin-bottom: 40px;
+  }
+
+  .trend-post {
+    width: 100%;
+    min-height: 233px;
+    margin-top: 4px;
+    margin-left: 0;
+  }
+
+  .trend-post:first-child {
+    margin-top: 0;
+  }
+
+  .trend-post-content {
+    padding: 20px 15px;
+  }
+
+  .content-tags {
+    margin-top: 12px;
+  }
+
+  .news {
+    width: 100%;
+    margin-bottom: 45px;
+  }
+
+  .post-img {
+    width: 100%;
+  }
+
+  .aside-container {
+    margin: 45px 0 0 0;
+    width: 350px;
+  }
+
+  .aside-title {
+    font-size: 16px;
+  }
+
+  .input-search {
+    width: 300px;
+  }
+
+  .products {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .product {
+    margin-top: 50px;
+  }
+
+  .footer-container {
+    width: calc(100% - 30px);
+    margin: 40px 15px 0px;
+  }
+}
+
+/* горизонтальная */
+
+@media (max-width: 640px) and (orientation: landscape) {
+  .trends-posts {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .trend-post {
+    width: calc((100% / 2) - 2.5px);
+  }
+}
